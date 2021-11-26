@@ -10,7 +10,7 @@ canvas.addEventListener("mousedown", mouse_down);
 
 function mouse_down(e) {
     color = document.getElementById("color").value;
-    width= docuent.getElementById("width").value;
+    width= document.getElementById("width").value;
     mouse_event= "mouse_down";
 }
 
@@ -42,7 +42,9 @@ function mouse_move(e) {
     ctx.lineTo(mouse_x , mouse_y);
     ctx.stroke();
 }
-
+pre_x = mouse_x;
+pre_y = mouse_y;
+}
  //console.log("x - " + mouse_x + " y - " + mouse_y);
   function clear_area(e){
       ctx.clearRect(0 , 0 , ctx.canvas.width , ctx.canvas.height);
